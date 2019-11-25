@@ -61,11 +61,33 @@ body {margin:0;}
 </div>
 <!--Menu-->
 
-<div class="main">
-  <p style="text-align:center">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<p style="text-align:center">
     <img src="logo/mythos_widewhite_logo.png" alt="" style="height: 50%; width: 50%"/>
   </p>
 
+<div class="row">
+  <div class="column">
 	<h1 style="text-align:center">Finance Sites</h1>
 	<center>
 		<p style="width:250px"><button class="button" onclick="window.open('https://www.finance.yahoo.com','_blank')">Yahoo Finance</button></p>
@@ -89,8 +111,10 @@ body {margin:0;}
 		<p style="width:250px"><button class="button" onclick="window.open('https://libguides.stanford.edu/az.php','_blank')">Stanford GSB databases</button></p>
 		Listing of GSB databases (e.g. Thomson ONE)
 	</center>
-
-	<h1 style="text-align:center">Biopharmaceutical Sites</h1>
+  </div>
+  
+  <div class="column">
+<h1 style="text-align:center">Biopharmaceutical Sites</h1>
 	<center>
 		<p style="width:250px"><button class="button" onclick="window.open('https://www.biopharmcatalyst.com','_blank')">Biopharmcatalyst</button></p>
 		Upcoming clinical catalysts<br><br>
@@ -113,7 +137,10 @@ body {margin:0;}
 		<p style="width:250px"><button class="button" onclick="window.open('https://www.fiercebiotech.com','_blank')">FierceBiotech News</button></p>
 		Biotech news<br><br>
 	</center>
+  </div>
+</div>
 
 
 </body>
 </html>
+
