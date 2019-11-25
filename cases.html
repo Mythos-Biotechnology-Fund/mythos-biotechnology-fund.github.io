@@ -32,6 +32,23 @@ body {margin:0;}
   margin-top: 30px;
   height: 1500px; /* scrolling */
 }
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #150;
+}
+
 </style>
 <body>
 <div class="navbar">
@@ -55,7 +72,7 @@ body {margin:0;}
   <h1 style="text-align:center">Case 1: $ARAV</h1>
     <center>
     <p style="width:750px">
-    <a href="cases/Mythos_case_1_ARAV.pdf" target="_blank">Case study on Aravive</a>
+    <button class="button" onclick="window.open('cases/Mythos_case_1_ARAV.pdf','_blank')">Aravive case study</button>
     <br>Aravive is a single-asset biotechnology startup spun out of Stanford University. The company is pursuing treatments for platinum-resistant ovarian cancer and other cancers, as well as fibrotic diseases. The technology is a biologic derived from the natural AXL receptor and serves to sequester GAS6 ligand, thereby suppressing AXL/GAS6 signaling. At the time, Aravive was conducting Phase 1b/2 clinical trials to test whether AXL decoy in combination with standard-of-care chemotherapy improved clinical outcomes for platinum-resistant ovarian cancer patients.
     </p>
     </center>
